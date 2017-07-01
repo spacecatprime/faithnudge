@@ -37,7 +37,8 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
-    'app',
+    'webpage',
+    'faithapi',
     # Add your apps here to enable them
     'django.contrib.admin',
     'django.contrib.auth',
