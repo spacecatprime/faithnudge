@@ -4,8 +4,9 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>faithapp</Name>
     <RootNamespace>faithapp</RootNamespace>
-    <InterpreterId>{9fcbcb29-d366-4588-94c2-bddfccb7d036}</InterpreterId>
+    <InterpreterId>{9a358857-4566-4aec-ad28-7c472efb4f3d}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -101,7 +102,7 @@
       <SubType>WebBrowser</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
+ <ItemGroup>
     <Interpreter Include="env_faithapp\">
       <Id>{9fcbcb29-d366-4588-94c2-bddfccb7d036}</Id>
       <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
@@ -114,6 +115,24 @@
       <Architecture>X86</Architecture>
     </Interpreter>
   </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a358857-4566-4aec-ad28-7c472efb4f3d}\2.7" />
+  </ItemGroup>
+<!--
+ <ItemGroup>
+    <Interpreter Include="env_faithapp\">
+      <Id>{9fcbcb29-d366-4588-94c2-bddfccb7d036}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env_faithapp (Python 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+-->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
        AfterBuild targets below. -->
