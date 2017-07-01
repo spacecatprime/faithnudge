@@ -26,7 +26,12 @@ SECRET_KEY = '4f76bc93-6812-4df5-ac88-4358815ead02'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'faithnudge.herokuapp.com',
+    'localhost', 
+    '127.0.0.1', 
+    '[::1]'
+]
 
 
 # Application definition
