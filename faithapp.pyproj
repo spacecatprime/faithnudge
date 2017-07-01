@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="faithapi\templates\index.html" />
+    <Content Include="Procfile" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
@@ -102,7 +103,7 @@
       <SubType>WebBrowser</SubType>
     </None>
   </ItemGroup>
- <ItemGroup>
+  <ItemGroup>
     <Interpreter Include="env_faithapp\">
       <Id>{9fcbcb29-d366-4588-94c2-bddfccb7d036}</Id>
       <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
@@ -118,7 +119,7 @@
   <ItemGroup>
     <InterpreterReference Include="{9a358857-4566-4aec-ad28-7c472efb4f3d}\2.7" />
   </ItemGroup>
-<!--
+  <!--
  <ItemGroup>
     <Interpreter Include="env_faithapp\">
       <Id>{9fcbcb29-d366-4588-94c2-bddfccb7d036}</Id>
