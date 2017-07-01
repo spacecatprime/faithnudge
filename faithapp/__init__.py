@@ -1,3 +1,3 @@
 """
-Package for faithapp.
+Package for faithapp
 """
